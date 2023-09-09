@@ -7,6 +7,7 @@
 # There is no default TARGET; you must select one here or on the make
 # command line. Some examples:
 
+TARGET = aarch64-linux-musl
 # TARGET = i486-linux-musl
 # TARGET = x86_64-linux-musl
 # TARGET = arm-linux-musleabi
@@ -20,7 +21,7 @@
 # can safely be installed in the same location. Some examples:
 
 # OUTPUT = /opt/cross
-# OUTPUT = /usr/local
+OUTPUT = /usr/bin
 
 # By default, latest supported release versions of musl and the toolchain
 # components are used. You can override those here, but the version selected
@@ -43,7 +44,7 @@
 
 # By default source archives are downloaded with wget. curl is also an option.
 
-# DL_CMD = wget -c -O
+DL_CMD = wget -c -q -O
 # DL_CMD = curl -C - -L -o
 
 # Check sha-1 hashes of downloaded source archives. On gnu systems this is
