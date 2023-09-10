@@ -21,7 +21,7 @@ TARGET = aarch64-linux-musl
 # can safely be installed in the same location. Some examples:
 
 # OUTPUT = /opt/cross
-OUTPUT = /usr/bin
+OUTPUT = /usr/local
 
 # By default, latest supported release versions of musl and the toolchain
 # components are used. You can override those here, but the version selected
